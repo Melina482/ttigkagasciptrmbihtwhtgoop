@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsxoudap8wfgb"]
 
-[ext_resource type="Script" uid="uid://c1c73ubah5x2t" path="res://scripts/main_menu.gd" id="1_m1kxf"]
+[ext_resource type="Script" uid="uid://c1c73ubah5x2t" path="res://scripts/gamemanager/ui/main_menu.gd" id="1_m1kxf"]
 [ext_resource type="Texture2D" uid="uid://dik4p76l4isxr" path="res://assets/map3/Free Pixel Art Forest/Preview/Background.png" id="2_x2yvf"]
 [ext_resource type="FontFile" uid="uid://dh2t6adlgfpj0" path="res://assets/brackeys_assets/fonts/PixelOperator8.ttf" id="3_uhagc"]
 [ext_resource type="FontFile" uid="uid://clfgbwraji6xo" path="res://assets/brackeys_assets/fonts/PixelOperator8-Bold.ttf" id="4_btxxm"]
@@ -82,25 +82,27 @@ theme_override_font_sizes/font_size = 21
 theme_override_styles/normal = SubResource("StyleBoxFlat_pm2xe")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_pm2xe")
 theme_override_styles/hover = SubResource("StyleBoxFlat_pm2xe")
-text = "Quit Game"
+text = "Quit"
 
 [node name="Label" type="Label" parent="." unique_id=46692804]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -441.5
+offset_left = -1087.5
 offset_top = 49.0
-offset_right = 441.5
+offset_right = 1087.5
 offset_bottom = 164.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_btxxm")
-theme_override_font_sizes/font_size = 66
-text = "DCISM SUNTUKAN"
+theme_override_font_sizes/font_size = 30
+text = "That Time I Got Killed and Got a Second Chance 
+in Purgatory to Redeem Myself but I Have to 
+Work Hard to Get Out of Purgatory"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/start_btn" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/settings_btn" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="VBoxContainer/exit_btn" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/start_btn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/settings_btn" to="." method="_on_settings_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit_btn" to="." method="_on_exit_btn_pressed"]
